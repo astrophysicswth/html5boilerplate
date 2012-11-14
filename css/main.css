@@ -1,0 +1,586 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #e44d26;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.PFDinTextPro-Regular { font-family: PFDinTextPro-Regular;}
+.PFDinTextPro-Medium { font-family: PFDinTextPro-Medium;}
+.PFDinTextPro-Bold { font-family: PFDinTextPro-Bold;font-size:4em;text-transform:uppercase; line-height:1.2}
+.PFDinTextPro-Light { font-family: PFDinTextPro-Light;}
+.PFDinTextPro-ExtraThin { font-family: PFDinTextPro-ExtraThin; }
+
+
+.funnytext {font-size:0.75em; font-style:italic;}
+.blue { color:#009ada;}
+.timeblue {color:#6caec9;}
+.vorange {color:#d88c55; font-style:italic;}
+.local {font-size:4em; line-height:1.5;color:#5c5c5c;}
+.validate { margin:0 auto; text-align:center;}
+select{
+    width:381px;
+	height:54px;
+	background-image: url(../img/dropdown.gif); 
+    /* background-size:contain;	*/
+    background-repeat: no-repeat;    
+	vertical-align:middle;
+	font-size:0.5em !important;
+	font-style:italic;  
+	font-family: PFDinTextPro-ExtraThin;
+	border-color:#eee;
+	-moz-appearance:none;
+    -webkit-appearance:none;
+	 appearance:none;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+	 border-radius:10px;    
+	 
+	 
+}
+
+ #bike {
+    width:116px;
+    height:4.875em;
+    margin: 0 auto;
+    position: relative;	
+	/* background:url(../img/bike1.gif) no-repeat; 
+	background-size:contain; */
+}
+
+#bike img {
+	 vertical-align: bottom; 
+}
+
+/* For "n" images You must define:
+a=presentation time for one image
+b=duration for cross fading
+Total animation-duration is of course t=(a+b)*n
+
+animation-delay = t/n or = a+b
+
+Percentage for keyframes:
+
+   1. 0%
+   2. a/t*100%
+   3. (a+b)/t*100% = 1/n*100%
+   4. 100%-(b/t*100%)
+   5. 100%
+*/
+ 
+ @-moz-keyframes  bikeFadeInOut {
+0% {
+		opacity:1;
+	}
+	25% {
+		opacity:1;
+	}
+	50% {
+		opacity:0;
+	}
+	75% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+
+}
+ 
+@-webkit-keyframes  bikeFadeInOut {
+0% {
+		opacity:1;
+	}
+	25% {
+		opacity:1;
+	}
+	50% {
+		opacity:0;
+	}
+	75% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+
+}
+
+
+@keyframes bikeFadeInOut {
+	0% {
+		opacity:1;
+	}
+	25% {
+		opacity:1;
+	}
+	50% {
+		opacity:0;
+	}
+	75% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+
+#bike img.top {
+       
+	-moz-animation-name: bikeFadeInOut;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-duration: 0.5s;
+	-moz-animation-direction: alternate;
+    -webkit-animation-name: bikeFadeInOut;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-direction: alternate;
+	animation-name: bikeFadeInOut;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 0.5s;
+	animation-direction: alternate;
+	position: absolute;
+    left: 0px;
+	}
+
+
+/* @keyframes bikeFadeInOut2 {
+	0% {
+		opacity:0;
+	}
+	25% {
+		opacity:0;
+	}
+	50% {
+		opacity:1;
+	}
+	75% {
+		opacity:1;
+	}
+	100% {
+		opacity:0;
+	}
+}
+
+#bike img.bottom  {
+animation-name: bikeFadeInOut2;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 0.5s;
+animation-direction: alternate;
+
+}
+*/
+
+.copy {float:left; font-style:italic; font-size:0.75em;line-height:0.8;}
+.riderscount {float:right; vertical-align:bottom;}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+	#bike {
+		height:39px;
+		width: 58px;
+	
+	/* background:url(../img/bike3.gif) no-repeat; */
+}
+	.PFDinTextPro-Bold { font-family: PFDinTextPro-Bold;font-size:2em;text-transform:uppercase;}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media only screen and (max-width: 479px) { 
+
+#bike {
+    height: 39px;
+    width: 58px;	
+	/* background:url(../img/bike3.gif) no-repeat; */
+}
+.PFDinTextPro-Bold { 
+		font-family: PFDinTextPro-Bold;
+		font-size:2.5em;
+		text-transform:uppercase;
+		line-height:1.1;
+	}
+	
+.local {font-size:1em; line-height:1.2;}
+	
+select{
+		height:1.4em;
+		width:9em;
+		-moz-background-size:contain;
+		-webkit-background-size:contain;
+		background-size:contain;	
+		font-size:1em !important;
+		font-style:italic;  
+		font-family: PFDinTextPro-ExtraThin;
+		
+    
+}
+	
+	
+}
+
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

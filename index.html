@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>BART Riders</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/webfonts.css">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+		
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <section class="header-container">
+            <header class="wrapper clearfix">
+                <p class="title">
+					<span class="PFDinTextPro-Bold">
+						<span class="blue">CAN i BRING MY 
+							<span id="bike">
+								<img class="top" alt="Bike" src="img/bike1.gif" />
+								<img class="bottom" alt="Bike" src="img/bike2.gif" /> 
+							</span>
+						ON
+						</span> BART 
+					</span><br />
+					<span class="PFDinTextPro-Light funnytext">Because finding this info on BART's website is extremely hard and sucky. Life should be simple and easy.
+					</span>
+				</p>
+				
+            </header>
+        </section>
+
+        <section class="main-container">
+            <section class="main wrapper clearfix">                   
+						<section>						
+							<p class="PFDinTextPro-Light local">It's currently 
+								<span id="local"></span>, so if you are leaving from 						
+								<select id="stations" onchange="isBikerFriendly(this.value)"></select>, 
+								<span id="error" class="vorange"></span>.
+							</p>						
+                        </section>
+      
+            </section> <!-- #main -->
+        </section> <!-- #main-container -->
+
+        <section class="footer-contain">
+			<footer class="wrapper">
+					<section class="copy">
+                       <p class="PFDinTextPro-Thin">Do you have the chops to work in this Universe </p>
+						<p>copyleft</p>
+					</section>
+					<section id="rider" class="riderscount"></section>
+					<section class="validate"><h6><a href="http://validator.w3.org/check?uri=referer">Valid HTML5</a></h6></section>
+             </footer>
+        </section>
+        <script src="js/purejs.js"></script>
+    </body>
+</html>
